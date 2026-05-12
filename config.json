@@ -1,0 +1,132 @@
+{
+  "ha_url": "http://192.168.100.12:8123",
+  "ha_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJkNmJkYzA0ODRiMTg0MTU2YTMyNjU1NmRmOGI0MTk1ZSIsImlhdCI6MTc3ODU2Njk3OCwiZXhwIjoyMDkzOTI2OTc4fQ.5f6bWmGGlIc2hVEkhYycQrAPrr5BWevaHEfNvtd0lRk",
+  "close_to_tray": true,
+  "start_minimized": false,
+  "buttons": [
+    {
+      "label": "Свет — включить",
+      "domain": "light",
+      "service": "turn_on",
+      "service_data": {
+        "entity_id": "light.example"
+      }
+    },
+    {
+      "label": "Свет — выключить",
+      "domain": "light",
+      "service": "turn_off",
+      "service_data": {
+        "entity_id": "light.example"
+      }
+    },
+    {
+      "label": "Сценарий",
+      "domain": "script",
+      "service": "turn_on",
+      "service_data": {
+        "entity_id": "script.your_script"
+      }
+    },
+    {
+      "label": "ночник",
+      "domain": "light",
+      "service": "turn_on",
+      "service_data": {
+        "entity_id": "nochnik"
+      }
+    },
+    {
+      "label": "Станция Мини new spalynya",
+      "domain": "media_player",
+      "service": "turn_on",
+      "service_data": {
+        "entity_id": "media_player.yandex_station_m00ae7000qch4k"
+      }
+    },
+    {
+      "label": "колонки",
+      "domain": "switch",
+      "service": "toggle",
+      "service_data": {
+        "entity_id": "switch.0x70b3d52b600a373e"
+      }
+    }
+  ],
+  "verify_ssl": true,
+  "sensor_panel": [
+    {
+      "entity_id": "binary_sensor.vkliuchen_gaz",
+      "label": "включен газ",
+      "icon": ""
+    }
+  ],
+  "sensor_refresh_seconds": 15,
+  "button_tabs": [
+    {
+      "title": "Действия",
+      "buttons": [
+        {
+          "label": "Свет — включить",
+          "domain": "light",
+          "service": "turn_on",
+          "service_data": {
+            "entity_id": "light.example"
+          }
+        },
+        {
+          "label": "Свет — выключить",
+          "domain": "light",
+          "service": "turn_off",
+          "service_data": {
+            "entity_id": "light.example"
+          }
+        },
+        {
+          "label": "Сценарий",
+          "domain": "script",
+          "service": "turn_on",
+          "service_data": {
+            "entity_id": "script.your_script"
+          }
+        },
+        {
+          "label": "ночник",
+          "domain": "light",
+          "service": "turn_on",
+          "service_data": {
+            "entity_id": "nochnik"
+          }
+        },
+        {
+          "label": "Станция Мини new spalynya",
+          "domain": "media_player",
+          "service": "turn_on",
+          "service_data": {
+            "entity_id": "media_player.yandex_station_m00ae7000qch4k"
+          }
+        },
+        {
+          "label": "колонки",
+          "domain": "switch",
+          "service": "toggle",
+          "service_data": {
+            "entity_id": "switch.0x70b3d52b600a373e"
+          }
+        }
+      ]
+    },
+    {
+      "title": "тест",
+      "buttons": []
+    }
+  ],
+  "ui": {
+    "button_font_size": 11,
+    "button_pad_x": 6,
+    "button_pad_y": 6,
+    "columns": 6,
+    "buttons_per_page": 0,
+    "sensor_panel_collapsed": false
+  }
+}

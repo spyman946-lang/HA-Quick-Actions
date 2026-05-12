@@ -1,0 +1,83 @@
+{
+  "ha_url": "https://homeassistant.local:8123",
+  "ha_token": "ВСТАВЬТЕ_ДОЛГОЖИВУЩИЙ_ТОКЕН_ИЗ_ПРОФИЛЯ_HA",
+  "verify_ssl": true,
+  "close_to_tray": true,
+  "start_minimized": false,
+  "sensor_refresh_seconds": 60,
+  "sensor_panel": [],
+  "sensor_tabs": [
+    {
+      "title": "Климат",
+      "columns": 1,
+      "item_layout": "row",
+      "icon_size": 16,
+      "label_font_size": 10,
+      "value_font_size": 11,
+      "label_width_chars": 22,
+      "sensors": [
+        {
+          "entity_id": "sensor.example_temperature",
+          "label": "Температура",
+          "icon": "🌡"
+        },
+        "weather.forecast_home"
+      ]
+    },
+    {
+      "title": "Другие",
+      "columns": 2,
+      "item_layout": "column",
+      "icon_size": 14,
+      "label_font_size": 9,
+      "value_font_size": 10,
+      "label_width_chars": 16,
+      "sensors": []
+    }
+  ],
+  "ui": {
+    "button_font_size": 11,
+    "button_pad_x": 6,
+    "button_pad_y": 6,
+    "columns": 2,
+    "buttons_per_page": 0,
+    "sensor_panel_collapsed": false
+  },
+  "button_tabs": [
+    {
+      "title": "Свет",
+      "buttons": [
+        {
+          "label": "Свет — включить",
+          "domain": "light",
+          "service": "turn_on",
+          "service_data": {
+            "entity_id": "light.example"
+          }
+        },
+        {
+          "label": "Свет — выключить",
+          "domain": "light",
+          "service": "turn_off",
+          "service_data": {
+            "entity_id": "light.example"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Сценарии",
+      "buttons": [
+        {
+          "label": "Сценарий",
+          "domain": "script",
+          "service": "turn_on",
+          "service_data": {
+            "entity_id": "script.your_script"
+          }
+        }
+      ]
+    }
+  ],
+  "buttons": []
+}
